@@ -4,7 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VERESIS - Official Website</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 全体設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 30px; /* ロゴサイズ調整 */
+            width: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        /* Main Visual */
+        .main-visual {
+            width: 100%;
+            height: 80vh;
+            padding-top: 70px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+
+        .main-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Concept */
+        .concept-section {
+            background-color: #fcfcfc;
+        }
+
+        .concept-text {
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 2;
+            color: #222;
+        }
+
+        /* Projects */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 50px 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-card:hover {
+            border-color: #bbb;
+            background-color: #fafafa;
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            font-size: 0.9rem;
+            color: #aaa;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 25px; /* ロゴサイズを控えめに調整 */
+            width: auto;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-logo:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            font-size: 0.75rem;
+            color: #bbb;
+            letter-spacing: 0.05em;
+        }
+
+        /* Mobile Adjustment */
+        @media (max-width: 600px) {
+            .concept-text {
+                font-size: 1.2rem;
+            }
+            nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
